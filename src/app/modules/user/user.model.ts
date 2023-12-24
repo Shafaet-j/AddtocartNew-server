@@ -1,8 +1,8 @@
 import { Schema, model } from "mongoose";
 import { TUser } from "./user.interface";
-import { TOrder } from "../order/order.interface";
 import bcrypt from "bcryptjs";
 import config from "../../config";
+import { TOrder } from "../order/order.interface";
 
 const orderSchema = new Schema<TOrder>({
   productName: {
